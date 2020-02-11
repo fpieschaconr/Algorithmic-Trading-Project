@@ -30,15 +30,15 @@ from quantopian.pipeline.data import EquityPricing
 
 # Constraint Parameters
 MAX_GROSS_LEVERAGE = 1.0
-TOTAL_POSITIONS = 50
+TOTAL_POSITIONS = 70
 
 # Here we define the maximum position size that can be held for any
 # given stock. If you have a different idea of what these maximum
 # sizes should be, feel free to change them. Keep in mind that the
 # optimizer needs some leeway in order to operate. Namely, if your
 # maximum is too small, the optimizer may be overly-constrained.
-MAX_SHORT_POSITION_SIZE = 10.0 / TOTAL_POSITIONS
-MAX_LONG_POSITION_SIZE = 10.0 / TOTAL_POSITIONS
+MAX_SHORT_POSITION_SIZE = 50.0 / TOTAL_POSITIONS
+MAX_LONG_POSITION_SIZE = 50.0 / TOTAL_POSITIONS
 
 
 def initialize(context):
